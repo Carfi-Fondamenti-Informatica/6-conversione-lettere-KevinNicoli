@@ -1,16 +1,18 @@
-#include <iostream>
 #include "lib.h"
-using namespace std;
 
-
-int main() {
-    char x;
-    cin >> x;
-    int ris=verifica(x);
-    if(ris){
-        cout << converti(x) << endl;
-    }else {
-        cout << "errore"<< endl;
+bool verifica (char a) {
+    if ((a >= 65 && a <= 90) || (a >= 97 && a <= 122)) {
+        return true;
+    } else {
+        return false;
     }
-    return 0;
+}
+char converti (char a) {
+    if (a>=65 && a<=90){
+        a= a+32;
+        return a;
+    }else if (a>=97 && a<=122) {
+        a= a-32;
+        return a;
+    }
 }
