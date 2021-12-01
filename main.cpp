@@ -12,5 +12,4 @@ int main() {
     }else {
         cout << "errore"<< endl;
     }
-    return a;
 }
