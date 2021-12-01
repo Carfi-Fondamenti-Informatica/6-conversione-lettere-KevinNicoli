@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     char x;
     cin >> x;
-    int ris=verifica(x);
+    bool ris=verifica(x);
     if(ris){
         cout << converti(x) << endl;
     }else {
