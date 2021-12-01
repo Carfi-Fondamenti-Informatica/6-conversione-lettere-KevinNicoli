@@ -1,7 +1,7 @@
 #include "lib.h"
 
 bool verifica (char a) {
-    if ((a >= 65 && a <= 90) || (a >= 97 && a <= 122)) {
+    if ((a >= 65 && a <= 90) or (a >= 97 && a <= 122)) {
         return true;
     } else {
         return false;
